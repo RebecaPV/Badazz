@@ -7,7 +7,23 @@ for (let s=1; s<=4; s++){
     let inicio= (prompt('Ingesa tu signo zodiacal; en minusculas y sin acentos por favor .'));
     let edadPersona= parseInt(prompt('Ingresa tu edad por favor'));
 //Clasificacion de signos para contar o saber cual signo entra mas
-    let signos = ["fuego","tierra","aire","agua"];
+    let signoFuego={
+        nombre:['aries','leo','sagitario'],
+        cantidad:0
+    }
+    let signoTierra={
+        nombre:['tauro','virgo','capricornio'],
+        cantidad:0
+    }
+    let signoAire={
+        nombre:['geminis','libra','acuario'],
+        cantidad:0
+    }
+    let signoAgua={
+        nombre:['cancer','escorpio','piscis'],
+        cantidad:0
+    }
+    //let signos = ["fuego","tierra","aire","agua"];
         if (edadPersona <= 20) {
             alert("Tu usuario es genercion"+ " "+ "Z");
         }
@@ -17,69 +33,69 @@ for (let s=1; s<=4; s++){
         else if (edadPersona >42  && edadPersona <=62) {
             alert("Tu usuario es genercion"+ " "+ "X");
         }
-        if (edadPersona== "" && edadPersona== NaN){
+        else if (edadPersona== "" && edadPersona== NaN){
             alert ('No ingresaste tu edad');
             continue
-           }
+        }
 switch(inicio){
     case "aries":
         alert("Bienvenido Aries");
-        signos[0] = signos[0] +1
+        signoFuego[0] = signoFuego.cantidad++
         break;
 
         case "tauro":
         alert("Bienvenido Tauro");
-        signos[1] = signos[1] +1
+        signoTierra[0] = signoTierra.cantidad++
         break;
 
         case "geminis":
         alert("Bienvenido Géminis");
-        signos[2] = signos[2] +1
+        signoAire[1] = signoAire.cantidad++
         break;
 
         case "cancer":
         alert("Bienvenido Cáncer");
-        signos[3] = signos[3] +1
+        signoAgua[0] = signoAgua.cantidad++
         break;
 
         case "leo":
         alert("Bienvenido Leo");
-        signos[0] = signos[0] +1
+        signoFuego[1] = signoFuego.cantidad++
         break;
 
         case "virgo":
         alert("Bienvenido Virgo");
-        signos[1] = signos[1] +1
+        signoTierra[1] = signoTierra.cantidad++
         break;
 
         case "libra":
         alert("Bienvenido Libra");
-        signos[2] = signos[2] +1
+        signoAire[2] = signoAire.cantidad++
         break;
 
         case "escorpio":
         alert("Bienvenido Escorpio");
-        signos[3] = signos[3] +1
+        signoAgua[1] = signoAgua.cantidad++
         break;
 
         case "sagitario":
         alert("Bienvenido Sagitario");
-        signos[0] = signos[0] +1
+        signoFuego[2] = signoFuego.cantidad++
         break;
 
         case "capricornio":
         alert("Bienvenido Capricornio");
-        signos[1] = signos[1] +1
+        signoTierra[2] = signoTierra.cantidad++
         break;
 
         case "acuario":
         alert("Bienvenido Acuario");
-        signos[2] = signos[2] +1
+        signoAire[2] = signoAire.cantidad++
         break;
 
         case "piscis":
         alert("Bienvenido Piscis");
-        signos[3] = signos[3] +1
+        signoAgua[2] = signoAgua.cantidad++
         break;
 // No ingreso nada o no ingreso correctamente
         default:
@@ -96,7 +112,22 @@ console.log(signos)
 }
 } 
 
+let form = document.getElementById('contactForm')
+let result =  document.getElementById('submitSuccessMessage')
 
+form.addEventListener("submit",validarUsuario);
 
+function validarUsuario(e){
+    e.preventDefault();
+    let userMail = document.getElementById("emailAddress").value;
+
+    if(userMail.length < 3 && userMail !== ''){
+        if(localStorage.getItem(form)){
+            result.innerText ="Correo del usuario debe ser mayor a 3"
+    }else{
+        result.innerText =`El correo ${userMail} fue enviado exitosamente`
+    }
+}
+}
 
 
