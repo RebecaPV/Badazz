@@ -36,11 +36,34 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <!--<div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <a class="btn btn-primary" href="#about">About</a>
-                    </div>
-                </div>-->
+
+                <div class="container-lg  text-white py-4 my-2">
+                    <h3>Selecciona tu signo zodiacal</h3>
+                    <select id="signos" class="form-select" aria-label="signos">
+                      <option value="aries">Aries</option>
+                      <option value="tauro">Tauro</option>
+                      <option value="geminis">Géminis</option>
+                      <option value="cancer">Cáncer</option>
+                      <option value="leo">Leo</option>
+                      <option value="virgo">Virgo</option>
+                      <option value="libra">Libra</option>
+                      <option value="escorpio">Escorpio</option>
+                      <option value="sagitario">Sagitario</option>
+                      <option value="capricornio">Capricornio</option>
+                      <option value="acuario">Acuario</option>
+                      <option value="piscis">Piscis</option>
+                    </select>
+                    <hr>
+                    <h3>Ingresa tu edad por favor</h3>
+                    <input id="edadPersona" class="form-control form-control-lg" type="number"
+                      placeholder="Ingresa tu edad aqui por favor" aria-label="edadPersona">
+                    <hr>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button id="my-form-button" class="btn btn-outline-primary btn-lg " onclick=clasificacionUsuarios()>OK</button>
+                  </div>
+
+                  <p class="display-6 py-2 text-center nav-item texto_bienvenida" id="bienvenida"></p>
             </div>
         </header>
         <!-- About-->

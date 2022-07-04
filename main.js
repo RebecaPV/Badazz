@@ -3,10 +3,12 @@
 asi mismo poder ver que signos son los que entran mas a la pagina y cual es el rango de edad del publico meta  */
 
 //Ciclo de pregunta de signo y edad, para clasificar generacion de publico meta
-for (let s=1; s<=4; s++){
-    let inicio= (prompt('Ingesa tu signo zodiacal; en minusculas y sin acentos por favor .'));
-    let edadPersona= parseInt(prompt('Ingresa tu edad por favor'));
+function clasificacionUsuarios(){     
+    let inicio= document.getElementById("signos").value;;
+    let edadPersona= parseInt(document.getElementById("edadPersona").value);
+
 //Clasificacion de signos para contar o saber cual signo entra mas
+//let signos = ["fuego","tierra","aire","agua"];
     let signoFuego={
         nombre:['aries','leo','sagitario'],
         cantidad:0
@@ -23,94 +25,96 @@ for (let s=1; s<=4; s++){
         nombre:['cancer','escorpio','piscis'],
         cantidad:0
     }
-    //let signos = ["fuego","tierra","aire","agua"];
+    
         if (edadPersona <= 20) {
-            alert("Tu usuario es genercion"+ " "+ "Z");
+            console.log("Tu usuario es genercion"+ " "+ "Z");
         }
         else if (edadPersona >=20 && edadPersona <=42) {
-            alert("Tu usuario es genercion"+ " "+ "Y");
+            console.log("Tu usuario es genercion"+ " "+ "Y");
         }
         else if (edadPersona >42  && edadPersona <=62) {
-            alert("Tu usuario es genercion"+ " "+ "X");
+            console.log("Tu usuario es genercion"+ " "+ "X");
         }
         else if (edadPersona== "" && edadPersona== NaN){
-            alert ('No ingresaste tu edad');
-            continue
+            console.log('No ingresaste tu edad');
         }
+
 switch(inicio){
     case "aries":
-        alert("Bienvenido Aries");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Aries");
         signoFuego[0] = signoFuego.cantidad++
         break;
 
         case "tauro":
-        alert("Bienvenido Tauro");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Tauro");
         signoTierra[0] = signoTierra.cantidad++
         break;
 
         case "geminis":
-        alert("Bienvenido Géminis");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Géminis");
         signoAire[1] = signoAire.cantidad++
         break;
 
         case "cancer":
-        alert("Bienvenido Cáncer");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Cáncer");
         signoAgua[0] = signoAgua.cantidad++
         break;
 
         case "leo":
-        alert("Bienvenido Leo");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Leo");
         signoFuego[1] = signoFuego.cantidad++
         break;
 
         case "virgo":
-        alert("Bienvenido Virgo");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Virgo");
         signoTierra[1] = signoTierra.cantidad++
         break;
 
         case "libra":
-        alert("Bienvenido Libra");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Libra");
         signoAire[2] = signoAire.cantidad++
         break;
 
         case "escorpio":
-        alert("Bienvenido Escorpio");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Escorpio");
         signoAgua[1] = signoAgua.cantidad++
         break;
 
         case "sagitario":
-        alert("Bienvenido Sagitario");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Sagitario");
         signoFuego[2] = signoFuego.cantidad++
         break;
 
         case "capricornio":
-        alert("Bienvenido Capricornio");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Capricornio");
         signoTierra[2] = signoTierra.cantidad++
         break;
 
         case "acuario":
-        alert("Bienvenido Acuario");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Acuario");
         signoAire[2] = signoAire.cantidad++
         break;
 
         case "piscis":
-        alert("Bienvenido Piscis");
+        document.getElementById("bienvenida").innerHTML=("Bienvenido Piscis");
         signoAgua[2] = signoAgua.cantidad++
         break;
 // No ingreso nada o no ingreso correctamente
-        default:
-            alert('Nombre no existente, Ingresa tu signo zodiacal');
-       if (inicio== ""){
-        alert ('No ingresaste tu signo');
-       }
+        if (inicio== "" && edadPersona==""){
+        document.getElementById("bienvenida").innerHTML=("No se han ingresados los datos correctamente");
+    }
 //Esto ayudra a saber cuantas personas entran?
-       const inicio=[]
+    const inicio=[]
 for (let i=0; i<inicio.length; i++){
     alert(inicio[i]);
 }
 console.log(signos)
 }
-} 
+}
+
+checkClick=()=>{
+    localStorage.setItem(clasificacionUsuarios,JSON.stringify(signoFuego,signoTierra,signoAire,signoAgua));
+    }
 
 let form = document.getElementById('contactForm')
 let result =  document.getElementById('submitSuccessMessage')

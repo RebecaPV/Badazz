@@ -11710,3 +11710,19 @@ body {
   --bs-text-opacity: 1;
   color: rgb(29,25,52);
 }
+
+.texto_bienvenida{
+  font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: #c6bbd0;
+}
+
+.p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
