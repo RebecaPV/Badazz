@@ -41,62 +41,170 @@ function clasificacionUsuarios(){
 
 switch(inicio){
     case "aries":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Aries");
+        Swal.fire({
+            title: 'Bienvenido Aries',
+            icon:'success',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          });
         signoFuego[0] = signoFuego.cantidad++
         break;
 
         case "tauro":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Tauro");
+            Swal.fire({
+                title: 'Bienvenido Tauro',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoTierra[0] = signoTierra.cantidad++
         break;
 
         case "geminis":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Géminis");
+            Swal.fire({
+                title: 'Bienvenido Géminis',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoAire[1] = signoAire.cantidad++
         break;
 
         case "cancer":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Cáncer");
+            Swal.fire({
+                title: 'Bienvenido Cáncer',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoAgua[0] = signoAgua.cantidad++
         break;
 
         case "leo":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Leo");
+            Swal.fire({
+                title: 'Bienvenido Leo',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoFuego[1] = signoFuego.cantidad++
         break;
 
         case "virgo":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Virgo");
+            Swal.fire({
+                title: 'Bienvenido Virgo',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoTierra[1] = signoTierra.cantidad++
         break;
 
         case "libra":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Libra");
+            Swal.fire({
+                title: 'Bienvenido Libra',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoAire[2] = signoAire.cantidad++
         break;
 
         case "escorpio":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Escorpio");
+            Swal.fire({
+                title: 'Bienvenido Escorpio',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoAgua[1] = signoAgua.cantidad++
         break;
 
         case "sagitario":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Sagitario");
+            Swal.fire({
+                title: 'Bienvenido Sagitario',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoFuego[2] = signoFuego.cantidad++
         break;
 
         case "capricornio":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Capricornio");
+            Swal.fire({
+                title: 'Bienvenido Capricornio',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoTierra[2] = signoTierra.cantidad++
         break;
 
         case "acuario":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Acuario");
+            Swal.fire({
+                title: 'Bienvenido Acuario',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoAire[2] = signoAire.cantidad++
         break;
 
         case "piscis":
-        document.getElementById("bienvenida").innerHTML=("Bienvenido Piscis");
+            Swal.fire({
+                title: 'Bienvenido Piscis',
+                icon:'success',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              });
         signoAgua[2] = signoAgua.cantidad++
         break;
 // No ingreso nada o no ingreso correctamente
