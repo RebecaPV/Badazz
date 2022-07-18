@@ -243,3 +243,28 @@ function validarUsuario(e){
 }
 
 
+let titulo = document.getElementById('signos');
+let descripcion = document.getElementById('edadPersona');
+let buscar = document.getElementById('buscar');
+let resultado = document.getElementById('resultado');
+
+
+buscar.addEventListener('click',() => {
+    const data = {
+        title: titulo.value,
+        body: descripcion.value,
+    }
+
+    fetch('https://jsonplaceholder.typicode.com/posts',{
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        }
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    })
+
+});
