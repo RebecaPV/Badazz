@@ -245,7 +245,7 @@ function validarUsuario(e){
 
 let titulo = document.getElementById('signos');
 let descripcion = document.getElementById('edadPersona');
-let buscar = document.getElementById('buscar');
+let buscar = document.getElementById('my-form-button');
 let resultado = document.getElementById('resultado');
 
 

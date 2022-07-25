@@ -37,8 +37,8 @@
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
 
-                <div class="container-lg  text-white py-4 my-2">
-                    <h3>Selecciona tu signo zodiacal</h3>
+                <div class="entrada_datos" class="container-lg  text-white py-4 my-2">
+                    <h3 class="signo_text">Selecciona tu signo zodiacal</h3>
                     <select id="signos" class="form-select" aria-label="signos">
                       <option value="aries">Aries</option>
                       <option value="tauro">Tauro</option>
@@ -54,13 +54,11 @@
                       <option value="piscis">Piscis</option>
                     </select>
                     <hr>
-                    <h3>Ingresa tu edad por favor</h3>
-                    <input id="edadPersona" class="form-control form-control-lg" type="number"
-                      placeholder="Ingresa tu edad aqui por favor" aria-label="edadPersona">
+                    <h3 class="edad_text">Ingresa tu edad por favor</h3>
+                    <input id="edadPersona" class="form-control form-control-lg" type="number" placeholder="Ingresa tu edad aqui por favor" aria-label="edadPersona">
                     <hr>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button id="my-form-button" id="buscar" class="btn btn-outline-primary btn-lg " onclick=clasificacionUsuarios()>OK</button>
+                    <div class="d-flex justify-content-center">
+                    <button id="my-form-button" class="btn btn-outline-primary btn-lg" class="btn_ok" onclick=clasificacionUsuarios()>OK</button>
                   </div>
                   <div class="row">
                     <div class="col s12 m12">
@@ -77,7 +75,7 @@
                     <div class="col-lg-8">
                         <h2 class="textabout mb-4">Astrology</h2>
                         <p class="text-black-50">
-                            The astrlogy is the study of the movements and relative positions of celestial bodies interpreted as having an influence on human affairs and the natural world.
+                            La astrología es el estudio de la posición y los movimientos de los astros y su influencia en las personas y los acontecimientos del mundo.
                            <!--  <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
                             The theme is open source, and you can use it for any purpose, personal or commercial. -->
                         </p>
@@ -95,19 +93,21 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Astrology Chart</h4>
-                            <p class="text-black-50 mb-0">The astrolgy chart is a diagram showing the positions of the planets, sun, moon, etc, at a particular time and place. </p>
+                            <p class="text-black-50 mb-0">La carta astral es un diagrama donde se muestra la posición de los planetas como el sol, la luna, etc, en una hora y lugar en particular. </p>
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/leo.png" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <h4 class="text-white">LEO (23 Julio - 23 Agosto)</h4>
+                                    <p class="mb-0 text-white-50">Leo está regido por el astro masculino el Sol que es el centro del universo, y está representado por un león, el rey de la selva, no es casualidad que las personas con este signo suelen ser personas a las que les gusta llamar y ser el centro de atención y es que aunque no quieran, brillan con luz propia.
+                                        Suelen ser carismáticos, llamativos, pasionales, sociales, voluntariosos y dominantes ya que suelen ser líderes naturales.
+                                        En la parte negativa toda esta luz puede transformarse en arrogancia o egocentrismo.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -116,13 +116,13 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/luna-llena-en-capri.png" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <h4 class="text-white">Luna llena en Capricornio</h4>
+                                    <p class="mb-0 text-white-50">Mis hermosos bebes lunares del rock, la luna llena en Capricornio se va a dar este 13 de Julio en conjunción a Plutón. En este momento tenemos todo para ver con claridad y madurez las consecuencias de un evento que se dio comenzando el año, que nos hizo cuestionarnos algunas cosas que seguramente hemos estado masticando últimamente y del cual empezamos a notar resultados de manera tangible en nuestro mundo "material". Los amo mucho ALV. Bye</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>

@@ -133,6 +133,8 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
+  color:rgba(255, 255, 255, 0.619);
+  
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -638,11 +640,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+  
 }
 
 @media (min-width: 576px) {
@@ -3334,8 +3332,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #64a19d;
-  border-color: #64a19d;
+  color: #7464a1;
+  border-color: #7464a1;
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -11725,4 +11723,28 @@ body {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.entrada_datos{
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-top: 35em;
+  margin-right: auto;
+  margin-left: auto;
+  background-position: center;
+}
+.btn_ok{
+    color: #7464a1;
+    border-color: #7464a1;}
+
+  .btn_ok:hover {
+    color: #fff;
+    background-color: #64a19d;
+    border-color: #64a19d;
+    margin-top: 45em;
+}
+
+.edad_text .signo_text{
+  color: rgba(198, 187, 208, 0.5);
 }
